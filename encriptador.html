@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8"> 
+        <meta name="viewport" content="width=device-width">
+        <title>Encriptador de Texto</title>
+        <link rel="shortcut icon" href="imagenes/Logo.png" type="image/x-icon¿¿">
+        <link rel="stylesheet" href="encriptador.css"/>
+        <link rel="stylesheet" href="reset.css"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <header>
+            <div class="logo-header">
+                <img src="imagenes/Logo.png" alt="Logo de Alura" id="Logo">
+            </div>
+            
+        </header>
+
+        <main>
+            <div class="main">
+                <div class="contenedor">
+                    <textarea id="ingresoTexto" class="ingreseTexto" placeholder="Ingrese el texto aqui"></textarea>
+
+                    <div class="contenedorFooter">
+                        <img src="imagenes/Vector.png">
+                        <p class="advertencia">Solo letras minúsculas y sin acentos</p>
+        
+                        <div class="botonesContenedor">
+                            <button id="botonEncriptar" class="boton-encriptar" type="button" onclick="encriptar()">Encriptar</button>
+        
+                            <button id="botonDesencriptar" class="boton-desencriptar" type="button" onclick="desencriptar()">Desencriptar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="encriptador" class="encriptador">
+                    <img id="muneco" class="muneco" src="imagenes/Muñeco.png" alt="Representacion grafica de una persona con un una lupa">
+                    <textarea id="mensaje" class="mensaje" placeholder="Ningún mensaje fue encontrado"></textarea>
+                    <p id="informacion" class="informacion">Ingresa el texto que desees encriptar o desencriptar.</p>
+                    <button id="botonCopiar" class="boton-copiar oculto" type="button" onclick="copiar()">Copiar</button>
+    
+                
+                </div>
+            
+             
+
+        </main>
+
+
+        <script src="encriptador.js"></script> 
+    </body>
